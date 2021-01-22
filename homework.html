@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+    <title>자기소개</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <style>
+        body{
+            background-image:linear-gradient(to right, pink, #D5D5D5);
+            font-family: "배달의민족 주아";
+        }
+        td.answer{
+            text-align: center;
+        }
+
+        *[tooltip]:after {
+            content: attr(tooltip);
+            opacity: 0;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            background-color: rgb(0, 0, 0);
+            border-radius: 0.4rem;
+            color: #fff;
+            position: absolute;
+            white-space: nowrap;
+            box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
+            padding: 0.7rem;
+            margin-left: 1rem;
+        }
+        
+        *[tooltip]:hover:after {
+            opacity: 1;
+            margin-left: 1.5rem;
+        }
+        a{
+            text-decoration:none;
+        }
+        table{
+            box-shadow: 5px 5px 5px 5px gray
+        }
+        </style>
+</head>
+<!--위에는 본문 내용을 설명. 하단은 본문-->
+
+<body>
+    <div>
+        안녕하세요. 제 이름은 <b>장이준</b>입니다.
+    </div>
+    <div>
+        현재 <a href="https://stat.skku.edu/stat/index.do">성균관대학교 통계학과</a>, 소프트웨어학과 19학번으로 재학 중입니다.
+    </div>
+
+    <table border="1">
+        <tr tooltip="table">
+            <th>질문</th>
+            <th>답변</th>
+        <tr tooltip="img"><!-- 첫번째 줄 시작 -->
+            <td>자주 쓰는 이모티콘은?</td>
+            <td class="answer"><img height="150px" src="https://item.kakaocdn.net/do/292cdc7572eca4ac0c5a7cf4d1da99418f324a0b9c48f77dbce3a43bd11ce785" width="100%"></td>
+        </tr><!-- 첫번째 줄 끝 -->
+        <tr tooltip="ol,ul"><!-- 두번째 줄 시작 -->
+            <td>베라 3픽은?</td>
+            <td class="answer">
+                <ol>
+                    <li>베리베리스트로베리</li>
+                    <li>아몬드 봉봉</li>
+                    <li>사랑에 빠진 딸기..?</li>
+                </ol>
+            </td>
+        </tr><!-- 두번째 줄 끝 -->
+        <tr tooltip="mark"><!-- 두번째 줄 시작 -->
+            <td>좌우명은?</td>
+            <td class="answer"><mark>놀 땐 놀고, 할 땐 하자.<mark></td>
+        </tr>
+        <tr tooltip="radio input"><!-- 두번째 줄 시작 -->
+            <td>MBTI는?
+            </td>
+            <td class="answer">
+                <div>
+                    <input type="radio" name="openess"/>E
+                    <input type="radio" name="openess"/>I
+                </div>
+                <div>
+                    <input type="radio" name="cognission"/>N
+                    <input type="radio" name="cognission"/>S
+                </div>
+                <div>
+                    <input type="radio" name="judgement"/>T
+                    <input type="radio" name="judgement"/>F
+                </div>
+                <div>
+                    <input type="radio" name="living"/>J
+                    <input type="radio" name="living"/>P
+                </div>
+            </td>
+        </tr>
+        <tr tooltip="a href"><!-- 두번째 줄 시작 -->
+            <td>Github 주소는?</td>
+            <td class="answer"><a href="https://github.com/jjun-0824?tab=repositories">여기</a></td>
+        </tr>
+        <tr tooltip="checkbox input"><!-- 두번째 줄 시작 -->
+            <td>2021년에 이루고 싶은 것?</td>
+            <td class="answer">
+                <input type="checkbox" name="wishlist" id=""> 저축
+                <input type="checkbox" name="wishlist" id=""> 여행
+                <input type="checkbox" name="wishlist" id=""> 코딩 정복
+                <input type="checkbox" name="wishlist" id=""> 효도
+            </td>
+        </tr>
+        </table>
+
+    <div>
+        <br><h2>지도 삽입<h2>
+    </div>
+    <div class="map-responsive">
+        <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.4120693159684!2d127.02214231463574!3d37.49819823579778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca15bf0a392ab%3A0x4e21633b2728441!2z7ZW07Luk7Iqk7Ja07ZWZ7JuQIOqwleuCqOyXrey6oO2NvOyKpCDrs7jqtIA!5e0!3m2!1sko!2skr!4v1610862959431!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div>
+        <br><h2>유튜브 영상 삽입<h2>
+    </div>
+    <div class="video_input">
+        <br><iframe width="716" height="403" src="https://www.youtube.com/embed/67stn7Pu7s4?list=PLv2d7VI9OotQ1F92Jp9Ce7ovHEsuRQB3Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
